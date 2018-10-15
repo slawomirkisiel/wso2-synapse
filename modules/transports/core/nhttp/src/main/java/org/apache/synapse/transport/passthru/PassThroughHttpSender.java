@@ -548,7 +548,7 @@ public class PassThroughHttpSender extends AbstractHandler implements TransportS
             // start sending the response if we
         	
 			boolean noEntityBodyResponse = false;
-			if (noEntityBody != null && Boolean.TRUE == noEntityBody
+			if (noEntityBody != null && noEntityBody
 					&& pipe != null) {
 				OutputStream out = pipe.getOutputStream();
 				out.write(new byte[0]);
